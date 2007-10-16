@@ -1,13 +1,14 @@
 %define name	winpdb
 %define version 1.2.2
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: An advanced Python debugger
 Name: 	 %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{name}-%{version}.tar.bz2
-License: GPL
+Patch0:	 rpdb2.py.patch
+License: GPL[
 Group: 	 Development/Python
 Url:   	 http://www.digitalpeers.com/pythondebugger/ 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -22,6 +23,7 @@ encrypted communication, and is up to 20 times faster than pdb.
 
 %prep
 %setup -q
+%patch0 -p0
 sed -i 's/\r//g' README.txt
 
 %build
