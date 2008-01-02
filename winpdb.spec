@@ -10,6 +10,7 @@ Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: 	 Development/Python
 Url:   	 http://www.digitalpeers.com/pythondebugger/ 
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 Requires:  python, wxPython >= 2.6.0
 BuildRequires: python-devel
