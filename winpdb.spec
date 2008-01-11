@@ -30,16 +30,9 @@ sed -i 's/\r//g' README.txt
 %install
 %__rm -rf %{buildroot}
 %__mkdir -p %{buildroot}/%{_bindir}
-%__mkdir -p %{buildroot}/%{_menudir}
 %__mkdir -p %{buildroot}/{%{_iconsdir},%{_miconsdir},%{_liconsdir}}
 %__python setup.py install --skip-build --root=%{buildroot}
 
-%__cat << EOF > %{buildroot}/%{_menudir}/%{name}
-?package(%{name}):command="%{_bindir}/winpdb" icon="%{name}.png" \
-needs="X11" section="More Applications/Development/Tools" title="%{name}" \
-longtitle="An advanced Python debugger" \
-xdg="true"
-EOF
 
 %__mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -72,7 +65,6 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{python_sitelib}/*
 %{_datadir}/applications/*.desktop
-%{_menudir}/*
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
