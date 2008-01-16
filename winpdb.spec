@@ -1,19 +1,19 @@
 %define name	winpdb
-%define version 1.3.2
+%define version 1.3.4
 %define release %mkrel 1
 
-Summary: An advanced Python debugger
-Name: 	 %{name}
-Version: %{version}
-Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
-License: GPL
-Group: 	 Development/Python
-Url:   	 http://www.digitalpeers.com/pythondebugger/ 
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildArch: noarch
-Requires:  python, wxPython >= 2.6.0
-BuildRequires: python-devel
+Summary: 	An advanced Python debugger
+Name: 	 	%{name}
+Version: 	%{version}
+Release: 	%{release}
+Source0: 	%{name}-%{version}.tar.bz2
+License: 	GPL
+Group: 	 	Development/Python
+Url:   	 	http://www.winpdb.org
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildArch: 	noarch
+Requires:  	python, wxPython >= 2.6.0
+BuildRequires: 	python-devel
 
 %description
 Winpdb is an advanced Python debugger. It supports smart breakpoints,
