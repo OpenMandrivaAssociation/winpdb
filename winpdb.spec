@@ -1,12 +1,12 @@
 %define name	winpdb
-%define version 1.3.4
+%define version 1.3.6
 %define release %mkrel 1
 
 Summary: 	An advanced Python debugger
 Name: 	 	%{name}
 Version: 	%{version}
 Release: 	%{release}
-Source0: 	%{name}-%{version}.tar.bz2
+Source0: 	%{name}-%{version}.tar.lzma
 License: 	GPL
 Group: 	 	Development/Python
 Url:   	 	http://www.winpdb.org
