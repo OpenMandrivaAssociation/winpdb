@@ -1,6 +1,6 @@
 %define name	winpdb
 %define version 1.4.8
-%define release %mkrel 2
+%define release 3
 
 Summary: 	An advanced Python debugger
 Name: 	 	%{name}
