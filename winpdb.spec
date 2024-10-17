@@ -9,7 +9,7 @@ Release: 	%{release}
 Source0: 	%{name}-%{version}.tar.gz
 License: 	GPLv2+
 Group: 	 	Development/Python
-Url:   	 	http://www.winpdb.org
+Url:   	 	https://www.winpdb.org
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: 	noarch
 Requires:  	python, wxPython >= 2.6.0
